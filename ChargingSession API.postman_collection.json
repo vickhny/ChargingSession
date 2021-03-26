@@ -1,0 +1,96 @@
+{
+	"info": {
+		"_postman_id": "fec33ca3-4f57-4c16-838a-8de4f55018b3",
+		"name": "ChargingSession API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create new session",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"stationId\": \"ABC-12345\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8090/chargingSessions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"chargingSessions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Session Summary",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8090/chargingSessions/summary",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"chargingSessions",
+						"summary"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Retrieve all sessions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8090/chargingSessions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"chargingSessions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Stop Charging Session",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8090/chargingSessions/aade9131-eec0-411f-9544-03dc8771dee6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"chargingSessions",
+						"aade9131-eec0-411f-9544-03dc8771dee6"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
